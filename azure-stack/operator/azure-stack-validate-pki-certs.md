@@ -161,7 +161,7 @@ Use these steps to prepare and to validate the Azure Stack Hub PKI certificates 
     ```
 Each folder should contain a single PFX file for the certificate type, if a certificate type has multi-certificate requirements nested folders for each individual certificate are expected and name sensitive.  The following code shows an example folder/certificate structure for all certificate types, and the appropriate value for ```-CertificateType``` and ```-CertificatePath```.
     
-    ```powershell  
+    ```powershell
     C:\>tree c:\SecretStore /A /F
         Folder PATH listing
         Volume serial number is 85AE-DF2E
@@ -204,6 +204,7 @@ Each folder should contain a single PFX file for the certificate type, if a cert
                         iothub.pfx      #   -CertificateType IoTHub `
                                         #   -CertificatePath C:\Certificates\IoTHub
     ```
+
 ### Known issues
 
 **Symptom**: Tests are skipped
